@@ -15,8 +15,11 @@
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true
+    "android": {
+      "package": "com.healthPlaces.locator",
+      "config": {
+        "googleMaps": { "apiKey": "AIzaSyCGAZgj16GFtwI603dB-gzKpgP7AUFkyl8" }
+      }
     }
   }
 }

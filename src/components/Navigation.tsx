@@ -1,31 +1,16 @@
-import React from "react";
+import React, { FC } from "react";
 import { NavigationContainer, RouteProp } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { View, Text } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import homeComp from "../home";
-
-type TabNavParamList = {
-  Home: undefined; //{ sort: 'latest' | 'top' } | undefined;
-  Search: undefined; //{ userId: string };
-  Discover: undefined;
-};
-
-type StackParamList = {
-  Home: undefined;
-  Search: undefined;
-  Discover: undefined;
-};
+import discover from "../sideBar";
+import place from "../selectedPlace";
+import { PlacesData } from "../home/actions";
+import search from "../selectedPlace";
 
 const Stack = createStackNavigator<StackParamList>();
 const Tab = createBottomTabNavigator<TabNavParamList>();
-
-const Comp = () => (
-  <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text>Settings!</Text>
-  </View>
-);
 
 function BottomTabs() {
   return (
@@ -47,18 +32,18 @@ function BottomTabs() {
         }}
       />
       <Tab.Screen
-        name="Search"
-        component={Comp}
+        name="Current"
+        component={homeComp.Home}
         options={{
-          tabBarLabel: "Search",
+          tabBarLabel: "Your Environ",
           tabBarIcon: ({ color, size }) => (
-            <AntDesign name="search1" color={color} size={size} />
+            <AntDesign name="enviromento" color={color} size={size} />
           ),
         }}
       />
       <Tab.Screen
         name="Discover"
-        component={Comp}
+        component={discover.Discover}
         options={{
           tabBarLabel: "Discover",
           tabBarIcon: ({ color, size }) => (
@@ -74,9 +59,41 @@ const NavigationRoute = () => {
   return (
     <NavigationContainer>
       {/* OTHER ROUTES GOES HERE */}
-      {/* <Stack.Screen >...</Stack.Navigator> */}
-      <BottomTabs />
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Root"
+          component={BottomTabs}
+          options={({ route }) => ({
+            title: "",
+            headerTransparent: true,
+          })}
+        />
+        <Stack.Screen
+          name="Search"
+          component={place.DetailsInfo}
+          options={({ route }) => ({
+            title: "",
+            headerTransparent: true,
+          })}
+        />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };
 export default NavigationRoute;
+
+type TabNavParamList = {
+  Home: undefined;
+  Discover: undefined;
+  Current: undefined;
+};
+type StackParamList = {
+  Search:
+    | { selectedPlace: PlacesData; allPlaces: Array<PlacesData> }
+    | undefined;
+  Root: undefined;
+};
+export type SearchParamList = {
+  selectedPlace: PlacesData;
+  allPlaces: Array<PlacesData>;
+};

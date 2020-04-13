@@ -1,45 +1,32 @@
-interface State {
-  task: Task;
-  taskId: string;
-  allTask: Array<Task>;
-}
+import { ActionTypes, PlacesData } from "./actions";
+type Action = {
+  type: string;
+  payload?: PlacesData;
+  error?: any;
+};
 
-interface Task {
-  task: string;
-  description: string;
-  date: string;
-  taskId: string;
-}
+export type State = {
+  loading: boolean;
+  places?: PlacesData;
+};
+const initialState = {
+  loading: true,
+};
 
-type Action =
-  | { type: "ADD_TASK"; task: Task }
-  | { type: "REMOVE_TASK"; taskId: string }
-  | { type: "EDIT_TASK"; taskId: string }
-  | { type: "GETALL_TASK"; allTask: Array<Task> };
-
-const taskReducer = (state: State, action: Action): State => {
+export default (state: State = initialState, action: Action): State => {
   switch (action.type) {
-    case "ADD_TASK":
-      console.log(action.task);
+    case ActionTypes.REQUEST_PLACE:
       return {
         ...state,
-        task: action.task,
+        loading: true,
       };
-    case "REMOVE_TASK":
+    case ActionTypes.GET_PLACE:
       return {
         ...state,
-        taskId: action.taskId,
+        loading: false,
+        ...action.payload,
       };
-    case "EDIT_TASK":
-      return {
-        ...state,
-        taskId: action.taskId,
-      };
-    case "GETALL_TASK":
-      return {
-        ...state,
-        allTask: action.allTask,
-      };
+    case ActionTypes.ERROR:
 
     default:
       return {
@@ -47,14 +34,3 @@ const taskReducer = (state: State, action: Action): State => {
       };
   }
 };
-
-const initTask: Task = { task: "", description: "", date: "", taskId: "" };
-
-const initialState = {
-  task: initTask,
-  taskId: "",
-  allTask: [initTask],
-};
-
-export { taskReducer, initialState, initTask };
-export type Tasks = Task;
