@@ -4,7 +4,7 @@ import { SearchBar } from "react-native-elements";
 import { StackHeaderProps } from "@react-navigation/stack";
 import { View, Text, StyleSheet, Dimensions, Image } from "react-native";
 
-import { PlacesData } from "../../home/actions";
+import { PlacesData } from "../../homeScreen/actions";
 import MoreInfoCard from "./SelectedCard";
 import SearchResult from "./SearchResult";
 

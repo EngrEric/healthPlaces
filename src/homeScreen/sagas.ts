@@ -7,6 +7,7 @@ import { ActionTypes, getPlaces, getError } from "./actions";
  * @param
  */
 function* placesWorker(): Generator<any, void, any> {
+  // TODO: replace with google places api
   const response = yield fetch(
     `https://feeds.citibikenyc.com/stations/stations.json`
   );

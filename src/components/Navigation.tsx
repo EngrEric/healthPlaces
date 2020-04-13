@@ -1,13 +1,12 @@
-import React, { FC } from "react";
-import { NavigationContainer, RouteProp } from "@react-navigation/native";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { AntDesign } from "@expo/vector-icons";
-import homeComp from "../home";
-import discover from "../sideBar";
-import place from "../selectedPlace";
-import { PlacesData } from "../home/actions";
-import search from "../selectedPlace";
+import homeComp from "../homeScreen";
+import discover from "../discoverScreen";
+import place from "../selectedPlaceScreen";
+import { PlacesData } from "../homeScreen/actions";
 
 const Stack = createStackNavigator<StackParamList>();
 const Tab = createBottomTabNavigator<TabNavParamList>();
@@ -63,7 +62,7 @@ const NavigationRoute = () => {
         <Stack.Screen
           name="Root"
           component={BottomTabs}
-          options={({ route }) => ({
+          options={() => ({
             title: "",
             headerTransparent: true,
           })}
@@ -71,7 +70,7 @@ const NavigationRoute = () => {
         <Stack.Screen
           name="Search"
           component={place.DetailsInfo}
-          options={({ route }) => ({
+          options={() => ({
             title: "",
             headerTransparent: true,
           })}
@@ -87,12 +86,14 @@ type TabNavParamList = {
   Discover: undefined;
   Current: undefined;
 };
+
 type StackParamList = {
   Search:
     | { selectedPlace: PlacesData; allPlaces: Array<PlacesData> }
     | undefined;
   Root: undefined;
 };
+
 export type SearchParamList = {
   selectedPlace: PlacesData;
   allPlaces: Array<PlacesData>;

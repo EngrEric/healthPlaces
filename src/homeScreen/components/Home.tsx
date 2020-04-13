@@ -1,7 +1,5 @@
-import React, { useEffect, useState, useCallback } from "react";
-import {} from "react-native";
+import React, { useEffect } from "react";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
-// import { Region } from "react-native-maps";
 import HomeMapView from "./MapView";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import { ActionTypes, PlacesData } from "../actions";
@@ -29,25 +27,27 @@ const Home: React.FC<BottomTabBarProps> = ({ navigation }) => {
     });
   };
   useEffect(() => {
-    // function getInitialLoaction() {
-    //   navigator.geolocation.getCurrentPosition(
-    //     ({ coords }) => {
-    //       console.log(region, ";mmmmmmm");
-    //       !shallowEqual(
-    //         coords.latitude + 0.3 || coords.latitude - 0.3,
-    //         region.latitude
-    //       ) &&
-    //         setRegion({
-    //           latitude: coords.latitude,
-    //           longitude: coords.longitude,
-    //           latitudeDelta: 0.0922,
-    //           longitudeDelta: 0.0421,
-    //         });
-    //     },
-    //     (err) => console.log(err)
-    //   );
-    // }
-    // getInitialLoaction();
+    /*
+    function getInitialLoaction() {
+      navigator.geolocation.getCurrentPosition(
+        ({ coords }) => {
+          console.log(region, ";mmmmmmm");
+          !shallowEqual(
+            coords.latitude + 0.3 || coords.latitude - 0.3,
+            region.latitude
+          ) &&
+            setRegion({
+              latitude: coords.latitude,
+              longitude: coords.longitude,
+              latitudeDelta: 0.0922,
+              longitudeDelta: 0.0421,
+            });
+        },
+        (err) => console.log(err)
+      );
+    }
+    getInitialLoaction();
+    */
     dispatch({ type: ActionTypes.REQUEST_PLACE });
   }, []);
 

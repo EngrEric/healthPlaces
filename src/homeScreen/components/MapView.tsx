@@ -1,6 +1,6 @@
 import React from "react";
-import { StyleSheet, ActivityIndicator } from "react-native";
-import MapView, { Region, Marker, OverlayAnimated } from "react-native-maps";
+import { StyleSheet } from "react-native";
+import MapView, { Region, Marker } from "react-native-maps";
 import { PlacesData } from "../actions";
 
 type Props = {

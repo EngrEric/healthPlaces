@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Provider } from "react-redux";
 import { AppRegistry } from "react-native";
 
@@ -6,16 +6,6 @@ import { store } from "./store/store";
 import NavigationRoute from "./src/components/Navigation";
 
 export default function App() {
-  // const [isReady, setLoading] = useState<boolean>(false);
-
-  // useEffect(() => {
-  //   const whenComponeMounts = async () => {
-
-  //     setLoading(!isReady);
-  //   };
-  //   whenComponeMounts();
-  // }, [isReady]);
-
   return (
     <Provider store={store}>
       <NavigationRoute />
@@ -23,4 +13,4 @@ export default function App() {
   );
 }
 
-AppRegistry.registerComponent("my_key_here", () => App);
+AppRegistry.registerComponent("health-places", () => App);

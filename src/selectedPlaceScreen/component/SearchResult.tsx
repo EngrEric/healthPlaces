@@ -7,8 +7,7 @@ import {
   Text,
   StyleSheet,
 } from "react-native";
-import { PlacesData } from "../../home/actions";
-
+import { PlacesData } from "../../homeScreen/actions";
 /**
  * component that displays the search result
  * @returns JSX search results

@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { Text, StyleSheet, Dimensions, Share } from "react-native";
 import { Card, Button, Icon } from "react-native-elements";
 
-import { PlacesData } from "../../home/actions";
+import { PlacesData } from "../../homeScreen/actions";
 
 /**
  * Draws the text information about the given location
