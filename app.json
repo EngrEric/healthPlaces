@@ -7,9 +7,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash2.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#e9c0ee"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,7 +18,7 @@
     "android": {
       "package": "com.healthPlaces.locator",
       "config": {
-        "googleMaps": { "apiKey": "" }
+        "googleMaps": { "apiKey": "AIzaSyCGAZgj16GFtwI603dB-gzKpgP7AUFkyl8" }
       }
     }
   }
