@@ -18,7 +18,7 @@
     "android": {
       "package": "com.healthPlaces.locator",
       "config": {
-        "googleMaps": { "apiKey": "AIzaSyCGAZgj16GFtwI603dB-gzKpgP7AUFkyl8" }
+        "googleMaps": { "apiKey": "" }
       }
     }
   }

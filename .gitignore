@@ -7,8 +7,10 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.orig.*
+.env
 web-build/
 web-report/
+yarn-error.log
 
 credentials.txt
 healthPlaces.jks
