@@ -8,6 +8,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 .env
+coverage/
 web-build/
 web-report/
 yarn-error.log

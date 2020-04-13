@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @type/react-native-vector-icons
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add jest-expo --dev
 
 PATH: 
-  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\EricPC\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\java;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Users\EngrEric\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Amazon\AWSCLI\bin;C:\Program Files (x86)\PowerShell\7-preview\preview;C:\Program Files (x86)\Yarn\bin;C:\Users\EricPC\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\EricPC\AppData\Local\Programs\Python\Python37;C:\Python27;C:\Users\EricPC\AppData\Roaming\npm\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\EricPC\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\EricPC\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\Brackets\command;C:\Program Files\IBM\Cloud\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microchip\xc8\v1.45\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Yarn\bin;C:\;C:\Users\EngrEric\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\elasticsearch-6.6.1\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\EricPC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\PostgreSQL\pg11\bin;C:\Users\EricPC\AppData\Local\Microsoft\WindowsApps;C:\flutter\bin;C:\java\bin;C:\tools\dart-sdk\bin;C:\Users\EricPC\AppData\Roaming\Pub\Cache\bin;C:\Users\EricPC\Documents\PowerShell\Scripts;C:\Users\EricPC\AppData\Local\Microsoft\WindowsApps;C:\Users\EricPC\AppData\Local\Yarn\bin
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\EricPC\bin;C:\Python27;C:\Python27\Scripts;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\java;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Users\EngrEric\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Amazon\AWSCLI\bin;C:\Program Files (x86)\PowerShell\7-preview\preview;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Users\EricPC\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\EricPC\AppData\Local\Programs\Python\Python37;C:\Python27;C:\Users\EricPC\AppData\Roaming\npm\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\EricPC\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\EricPC\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\Brackets\command;C:\Program Files\IBM\Cloud\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microchip\xc8\v1.45\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Yarn\bin;C:\;C:\Users\EngrEric\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\elasticsearch-6.6.1\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\EricPC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\PostgreSQL\pg11\bin;C:\Users\EricPC\AppData\Local\Microsoft\WindowsApps;C:\flutter\bin;C:\java\bin;C:\tools\dart-sdk\bin;C:\Users\EricPC\AppData\Roaming\Pub\Cache\bin;C:\Users\EricPC\Documents\PowerShell\Scripts;C:\Users\EricPC\AppData\Local\Microsoft\WindowsApps;C:\Users\EricPC\AppData\Local\Yarn\bin
 
 Yarn version: 
   1.22.0
@@ -14,23 +14,14 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@type%2freact-native-vector-icons: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66084:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140727:22)
-      at Request.emit (events.js:210:5)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141699:10)
-      at Request.emit (events.js:210:5)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141621:12)
-      at Object.onceWrapper (events.js:299:28)
-      at IncomingMessage.emit (events.js:215:7)
-      at endReadableNT (_stream_readable.js:1184:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\EricPC\AppData\Local\Yarn\Cache\v6\npm-chalk-3.0.0-3f73c2bf526591f574cc492c51e2456349f844e4-integrity\node_modules\chalk\license' -> 'C:\Users\EricPC\Desktop\freelance\healthPlaces\node_modules\@expo\config\node_modules\chalk\license'
 
 npm manifest: 
   {
     "main": "node_modules/expo/AppEntry.js",
     "scripts": {
       "start": "expo start",
+      "test": "jest",
       "android": "expo start --android",
       "ios": "expo start --ios",
       "web": "expo start --web",
@@ -38,6 +29,7 @@ npm manifest:
     },
     "dependencies": {
       "@ant-design/icons-react-native": "^2.0.0",
+      "@edgarturrin/react-native-google-places": "^1.0.4-test4",
       "@expo/vector-icons": "^10.0.6",
       "@react-native-community/async-storage": "^1.9.0",
       "@react-native-community/masked-view": "0.1.6",
@@ -50,14 +42,17 @@ npm manifest:
       "react": "~16.9.0",
       "react-dom": "~16.9.0",
       "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.0.tar.gz",
+      "react-native-autocomplete-input": "^4.1.0",
       "react-native-elements": "^1.2.7",
       "react-native-geocoding": "^0.4.0",
       "react-native-gesture-handler": "~1.6.0",
+      "react-native-google-places": "^3.1.2",
       "react-native-google-places-autocomplete": "^1.4.1",
       "react-native-maps": "0.26.1",
       "react-native-reanimated": "~1.7.0",
       "react-native-safe-area-context": "0.7.3",
       "react-native-screens": "~2.2.0",
+      "react-native-vector-icons": "^6.6.0",
       "react-native-web": "~0.11.7",
       "react-navigation": "^4.3.7",
       "react-redux": "^7.2.0",
@@ -71,6 +66,7 @@ npm manifest:
       "@types/react-native": "~0.61.17",
       "@types/react-redux": "^7.1.7",
       "babel-preset-expo": "^8.1.0",
+      "redux-devtools-extension": "^2.13.8",
       "typescript": "~3.8.3"
     },
     "private": true
@@ -1010,6 +1006,11 @@ Lockfile:
     dependencies:
       exec-sh "^0.3.2"
       minimist "^1.2.0"
+  
+  "@edgarturrin/react-native-google-places@^1.0.4-test4":
+    version "1.0.4-test4"
+    resolved "https://registry.yarnpkg.com/@edgarturrin/react-native-google-places/-/react-native-google-places-1.0.4-test4.tgz#11075c2503cda041b357985fa2dce53c5483f57d"
+    integrity sha512-Ec9fkx3hFoAVuY0ZPbTz5yDc/zDuD4SqsDUsPK2CI5Fwj9sGFYEeHU3b1goZda0GfMElfWSgtY0x6UXfPwDUuw==
   
   "@egjs/hammerjs@^2.0.17":
     version "2.0.17"
@@ -4687,6 +4688,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
     integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
   
+  react-native-autocomplete-input@^4.1.0:
+    version "4.1.0"
+    resolved "https://registry.yarnpkg.com/react-native-autocomplete-input/-/react-native-autocomplete-input-4.1.0.tgz#979ece28d891b245ecb967b6d31f1f924445b8ab"
+    integrity sha512-Yn4GulZ9F6tde74UUGZHdVFeYWVuL7+EbUZy6kt+QHrzMc5B4OuRop1FT4RyWLpvbySW/vvqYgj9LAmlzkuEqA==
+  
   react-native-drawer@2.5.1:
     version "2.5.1"
     resolved "https://registry.yarnpkg.com/react-native-drawer/-/react-native-drawer-2.5.1.tgz#08b9314184f48c724f1b467f8859797369798654"
@@ -4739,6 +4745,11 @@ Lockfile:
       lodash.debounce "^4.0.8"
       prop-types "^15.5.10"
       qs "^5.2.0"
+  
+  react-native-google-places@^3.1.2:
+    version "3.1.2"
+    resolved "https://registry.yarnpkg.com/react-native-google-places/-/react-native-google-places-3.1.2.tgz#6aa11f76da6bd58aa9ec1d1b3e2c85edb4ced2ce"
+    integrity sha512-aKPbGHga3k/Vkfw9NMf/1t0sivdqxn4qzCbEyAfmhxO7Mlqv9Nljjnez6rp6MZGwh89ss3/a9lhM4ulyZ6o0ew==
   
   react-native-iphone-x-helper@^1.0.3, react-native-iphone-x-helper@^1.2.1:
     version "1.2.1"
@@ -4936,6 +4947,11 @@ Lockfile:
       safe-buffer "~5.1.1"
       string_decoder "~1.1.1"
       util-deprecate "~1.0.1"
+  
+  redux-devtools-extension@^2.13.8:
+    version "2.13.8"
+    resolved "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.8.tgz#37b982688626e5e4993ff87220c9bbb7cd2d96e1"
+    integrity sha512-8qlpooP2QqPtZHQZRhx3x3OP5skEV1py/zUdMY28WNAocbafxdG2tRD1MWE7sp8obGMNYuLWanhhQ7EQvT1FBg==
   
   redux-persist@^6.0.0:
     version "6.0.0"
