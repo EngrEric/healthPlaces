@@ -10,7 +10,7 @@ import {
   Dimensions,
 } from "react-native";
 import Card from "./Card";
-import Home from "../../home/components/Home";
+import home from "../../homeScreen";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs/lib/typescript/src/types";
 
 const { width, height } = Dimensions.get("window");
@@ -38,7 +38,7 @@ const Discover: FC<BottomTabBarProps> = (props): JSX.Element => {
        */}
 
       <View style={styles.map}>
-        <Home {...props} />
+        <home.Home {...props} />
       </View>
       <Text
         style={{
